@@ -123,15 +123,13 @@
             googleApiKey:       "AIzaSyA3FQFrNr5W2OEVmuENqhb2MBB2JabdaOY",
             locationColumn:     "geometry",
             map_center:         [41.8781136, -87.66677856445312],
-            locationScope:      "chicago"
+            locationScope:      ""
           });
-
           var autocomplete = new google.maps.places.Autocomplete(document.getElementById('search_address'));
       
           $(':checkbox').click(function(){
             myMap.doSearch();
           });
-
           $(':radio').click(function(){
             myMap.doSearch();
           });
